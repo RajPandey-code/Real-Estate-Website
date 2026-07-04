@@ -35,30 +35,41 @@
 
   // Whatsapp float=====================
 
-  document.querySelector(".whatsapp-float")
-.addEventListener("click", function(){
+  const whatsappBtn = document.querySelector(".whatsapp-float");
 
-    gtag('event', 'whatsapp_click');
+  if (whatsappBtn) {
+    whatsappBtn.addEventListener("click", () => {
+      console.log("WhatsApp clicked");
 
-});
+      if (typeof gtag === "function") {
+        gtag("event", "whatsapp_click");
+      }
+    });
+  }
 
-// call btn=====================
+  // call btn=====================
 
-document.querySelector(".btn.btn-primary")
-.addEventListener("click", function(){
+  const phoneBtn = document.querySelector(".btn.btn-primary");
 
-    gtag('event', 'phone_click');
+  if (phoneBtn) {
+    phoneBtn.addEventListener("click", () => {
+      console.log("Phone clicked");
 
-});
+      if (typeof gtag === "function") {
+        gtag("event", "phone_click");
+      }
+    });
+  }
 
-// contact form=====================  
+  // contact form=====================  
 
-document.getElementById("contactForm")
-.addEventListener("submit", function(){
+  if (!response.ok) {
+    throw new Error("Submission failed");
+  }
 
-    gtag('event', 'form_submit');
-
-});
+  if (typeof gtag === "function") {
+    gtag("event", "form_submit");
+  }
 
   /* ── Hamburger menu ─────────────────────────────────────── */
   if (hamburger && navLinks) {
