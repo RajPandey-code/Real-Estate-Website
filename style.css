@@ -342,20 +342,30 @@ a {
 }
 
 /* Mobile */
-@media (max-width: 768px) {
-  .whatsapp-float {
-    bottom: 20px;
-    right: 20px;
-    padding: 12px 16px;
+@media(max-width:768px) {
+
+  .hero {
+
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+
   }
 
-  .whatsapp-text {
-    display: none;
+  .hero-left,
+  .hero-right {
+
+    width: 100%;
+
   }
 
-  .whatsapp-icon {
-    font-size: 26px;
+  .hero img {
+
+    width: 100%;
+    height: auto;
+
   }
+
 }
 
 /* Hamburger */
@@ -1111,70 +1121,202 @@ p {
   }
 }
 
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
+/* ==========Navigation============ */
+@media(max-width:768px) {
 
-  .nav-links {
-    display: none;
-    position: fixed;
-    top: var(--nav-h);
-    left: 0;
-    right: 0;
-    background: var(--white);
+  nav {
+
     flex-direction: column;
-    gap: 0;
-    padding: 16px 0 24px;
-    box-shadow: var(--shadow-nav);
+    gap: 20px;
+
   }
 
-  .nav-links.open {
-    display: flex;
-  }
+  nav ul {
 
-  .nav-links a {
-    color: var(--text) !important;
-    padding: 12px 28px;
+    flex-direction: column;
     width: 100%;
+    text-align: center;
+
   }
 
-  .nav-links a::after {
-    bottom: 0;
+  nav li {
+
+    margin: 10px 0;
+
   }
 
-  .nav-socials {
-    display: none;
-  }
+}
 
-  .properties-grid {
+/* ===========services============  */
+
+@media(max-width:768px) {
+
+  .services-grid {
+
+    display: grid;
+
     grid-template-columns: 1fr;
+
+    gap: 25px;
+
   }
 
-  .testimonials-inner {
+}
+
+/* ===========testimonials============   */
+
+@media(max-width:768px) {
+
+  .testimonial-grid {
+
+    display: grid;
+
     grid-template-columns: 1fr;
-    gap: 40px;
+
+    gap: 25px;
+
   }
 
-  .about-inner {
-    grid-template-columns: 1fr;
-    padding: 32px;
-  }
+}
 
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
+/* =========contact========= */
+@media(max-width:768px) {
 
-  .footer-bottom-inner {
+  .contact-container {
+
+    display: flex;
+
     flex-direction: column;
-    gap: 12px;
+
+    gap: 40px;
+
   }
 
-  .contact-card {
-    padding: 36px 28px;
+  .contact-form,
+  .contact-info {
+
+    width: 100%;
+
+  }
+
+}
+
+/* ========footer========  */
+@media(max-width:768px) {
+
+  .footer {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+    gap: 30px;
+
   }
 }
+
+/* =========images=========== */
+img {
+
+  max-width: 100%;
+
+  height: auto;
+
+  display: block;
+
+}
+
+/* ==========buttons============ */
+@media(max-width:768px) {
+
+  .btn {
+
+    width: 100%;
+
+    padding: 16px;
+
+    font-size: 17px;
+
+  }
+
+}
+
+/* ============form=============== */
+@media(max-width:768px) {
+
+  input,
+  select,
+  textarea {
+
+    width: 100%;
+
+    font-size: 16px;
+
+  }
+
+}
+
+.nav-links {
+  display: none;
+  position: fixed;
+  top: var(--nav-h);
+  left: 0;
+  right: 0;
+  background: var(--white);
+  flex-direction: column;
+  gap: 0;
+  padding: 16px 0 24px;
+  box-shadow: var(--shadow-nav);
+}
+
+.nav-links.open {
+  display: flex;
+}
+
+.nav-links a {
+  color: var(--text) !important;
+  padding: 12px 28px;
+  width: 100%;
+}
+
+.nav-links a::after {
+  bottom: 0;
+}
+
+.nav-socials {
+  display: none;
+}
+
+.properties-grid {
+  grid-template-columns: 1fr;
+}
+
+.testimonials-inner {
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.about-inner {
+  grid-template-columns: 1fr;
+  padding: 32px;
+}
+
+.footer-grid {
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.footer-bottom-inner {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-card {
+  padding: 36px 28px;
+}
+
 
 @media (max-width: 540px) {
   .services-grid {
