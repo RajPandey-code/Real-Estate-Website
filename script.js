@@ -44,7 +44,7 @@
 
 // call btn=====================
 
-document.querySelector(".btn btn-primary")
+document.querySelector(".btn.btn-primary")
 .addEventListener("click", function(){
 
     gtag('event', 'phone_click');
