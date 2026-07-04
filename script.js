@@ -35,7 +35,7 @@
 
   // Whatsapp float=====================
 
-  document.querySelector(".whatsapp-text")
+  document.querySelector(".whatsapp-float")
 .addEventListener("click", function(){
 
     gtag('event', 'whatsapp_click');
@@ -51,7 +51,7 @@ document.querySelector(".btn btn-primary")
 
 });
 
-// contsct form=====================  
+// contact form=====================  
 
 document.getElementById("contactForm")
 .addEventListener("submit", function(){
