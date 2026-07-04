@@ -33,6 +33,33 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll(); // run once on load
 
+  // Whatsapp float=====================
+
+  document.querySelector(".whatsapp-text")
+.addEventListener("click", function(){
+
+    gtag('event', 'whatsapp_click');
+
+});
+
+// call btn=====================
+
+document.querySelector(".btn btn-primary")
+.addEventListener("click", function(){
+
+    gtag('event', 'phone_click');
+
+});
+
+// contsct form=====================  
+
+document.getElementById("contactForm")
+.addEventListener("submit", function(){
+
+    gtag('event', 'form_submit');
+
+});
+
   /* ── Hamburger menu ─────────────────────────────────────── */
   if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
