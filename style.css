@@ -1074,14 +1074,19 @@ p {
   margin-left: 45%;
 }
 
+.social-svg svg{
+  color: white;
+}
+
 
 .footer-socials a {
   color: rgba(255, 255, 255, 0.5);
   transition: color 0.2s;
 }
 
-.footer-socials-inner {
+.footer-socials-inner p {
   margin-left: -2%;
+  color:white;
 }
 
 .footer-socials a:hover {
