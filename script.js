@@ -61,15 +61,6 @@
     });
   }
 
-  // contact form=====================  
-
-  if (!response.ok) {
-    throw new Error("Submission failed");
-  }
-
-  if (typeof gtag === "function") {
-    gtag("event", "form_submit");
-  }
 
   /* ── Hamburger menu ─────────────────────────────────────── */
   if (hamburger && navLinks) {
@@ -244,6 +235,10 @@
 
       if (!response.ok) {
         throw new Error("Submission failed");
+      }
+
+      if (typeof gtag === "function") {
+        gtag("event", "form_submit");
       }
 
       sendBtn.textContent = "YOUR MESSAGE HAS BEEN SENT SUCCESSFULLY. WE WILL GET BACK TO YOU SOON.";
