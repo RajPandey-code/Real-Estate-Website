@@ -282,24 +282,6 @@ a {
   color: var(--teal);
 }
 
-.btn-search {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
-  color: rgba(255, 255, 255, 0.8);
-  display: flex;
-  transition: color 0.2s;
-}
-
-.btn-search:hover {
-  color: var(--white);
-}
-
-.navbar.scrolled .btn-search {
-  color: var(--text-muted);
-}
-
 /* Floating WhatsApp Button */
 
 .whatsapp-float {
@@ -339,23 +321,6 @@ a {
 
 .Enquire on WhatsApp-text {
   white-space: nowrap;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .whatsapp-float {
-    bottom: 20px;
-    right: 20px;
-    padding: 12px 16px;
-  }
-
-  .whatsapp-text {
-    display: none;
-  }
-
-  .whatsapp-icon {
-    font-size: 26px;
-  }
 }
 
 /* Hamburger */
@@ -1117,7 +1082,7 @@ p {
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
@@ -1180,7 +1145,7 @@ p {
   .contact-card {
     padding: 36px 28px;
   }
-}
+} */
 
 @media (max-width: 540px) {
   .services-grid {
@@ -1324,31 +1289,42 @@ p {
   }
 
   .nav-links {
-
     position: absolute;
-    top: 72px;
-    left: 0;
+    top: 30px;
+    /* left: 0; */
+    right: 20px;
     width: 100%;
-    background: rgb(133, 198, 228);
-
+    background: none;
     display: none;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
     padding: 20px 0;
-
     box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
-
   }
 
   .nav-links.open {
     display: flex;
+    backdrop-filter: blur(4px);
+    height: 100vh;
+    right: 0;
+    top: 0;
+    padding-right: 50px;
+  }
+
+  .nav-links.open a {
+    top: 40px;
+    padding: 12px 28px;
+    width: 100px;
+    height: 40px;
+    font-weight: 800;
+    text-align: right;
   }
 
   .nav-socials {
     display: flex;
     gap: 50px;
-    margin-right:90px;
-    margin-top: 10px; 
+    margin-right: 90px;
+    margin-top: 10px;
   }
 
   .hero {
@@ -1357,6 +1333,7 @@ p {
 
   .hero-title {
     font-size: 42px;
+    margin-left: 20px;
   }
 
   .services-grid,
@@ -1366,6 +1343,37 @@ p {
 
     grid-template-columns: 1fr;
 
+  }
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    background: rgb(2, 110, 2);
+    color: rgb(3, 182, 102);
+    padding: 5px 10px;
+    border-radius: 80px;
+    box-shadow: 0 8px 25px rgba(2, 244, 82, 0.25);
+    transition: all 0.3s ease;
+  }
+
+  .whatsapp-text {
+    display: none;
+  }
+
+  .whatsapp-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+
+  .hero-content .btn.btn-primary {
+    width: 50%;
+    height: 50px;
+    font-style: var(--font-body);
   }
 
   .contact-container {
