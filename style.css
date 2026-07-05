@@ -1074,7 +1074,7 @@ p {
   margin-left: 45%;
 }
 
-.social-svg svg{
+.social-svg svg {
   color: white;
 }
 
@@ -1086,7 +1086,7 @@ p {
 
 .footer-socials-inner p {
   margin-left: -2%;
-  color:white;
+  color: white;
 }
 
 .footer-socials a:hover {
@@ -1190,6 +1190,210 @@ p {
   .hero-title {
     font-size: 2.2rem;
   }
+}
+
+@media (max-width:480px) {
+
+  .hero-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero .btn {
+
+    width: 100%;
+
+  }
+
+  .section-title {
+
+    font-size: 30px;
+
+  }
+
+  .section-subtitle {
+
+    font-size: 15px;
+
+  }
+
+  .property-body {
+
+    padding: 18px;
+
+  }
+
+  .about-inner {
+
+    padding: 20px;
+
+  }
+
+  .contact-section {
+
+    padding: 40px 20px;
+
+  }
+
+  .banner-content {
+
+    width: 90%;
+
+  }
+
+  .banner-content h1 {
+
+    font-size: 30px;
+
+  }
+
+  .banner-content p {
+
+    font-size: 15px;
+
+  }
+
+  .footer {
+
+    text-align: center;
+
+  }
+
+  .footer-grid {
+
+    text-align: center;
+
+  }
+
+  .footer-contact-list {
+
+    align-items: center;
+
+  }
+
+  .footer-socials {
+
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .social-svg {
+
+    justify-content: center;
+
+  }
+
+  .whatsapp-float {
+
+    right: 15px;
+    bottom: 15px;
+
+  }
+
+}
+
+@media (max-width:768px) {
+
+  .container {
+    /* padding-inline: 18px; */
+    max-width: 768px;
+  }
+
+  .navbar {
+    max-width: 768px;
+  }
+
+  .logo-icon {
+    margin-left: 100px;
+  }
+
+  .logo-text {
+    display: flex;
+    /* margin-left: 80px; */
+  }
+
+  .logo strong {
+    display: flex;
+    margin-left: 5px;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-right: 5px;
+  }
+
+  .nav-links {
+
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: rgb(133, 198, 228);
+
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-socials {
+    display: flex;
+    gap: 50px;
+    margin-right:90px;
+    margin-top: 10px; 
+  }
+
+  .hero {
+    padding: 120px 0 70px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .services-grid,
+  .properties-grid,
+  .areas-grid,
+  .footer-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .map-container {
+
+    height: 400px;
+
+  }
+
+  .banner-content h1 {
+
+    font-size: 38px;
+
+  }
+
+  .banner-content p {
+
+    font-size: 16px;
+
+  }
+
 }
 
 /* ── Reduced motion ───────────────────────────────────────── */
