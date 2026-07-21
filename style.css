@@ -796,12 +796,13 @@ img {
 }
 
 .contact-container {
-  flex-direction: row;
   display: flex;
+  flex-direction: row;
   gap: 174px;
   justify-content: center;
   align-items: center;
 }
+
 
 .contact-form {
   margin-bottom: 150px;
@@ -964,10 +965,11 @@ img {
 }
 
 .map-container iframe {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
   border: 0;
-  display: block;
 }
 
 
