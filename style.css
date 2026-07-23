@@ -253,7 +253,7 @@ a {
   bottom: -5px;
   width: 0px;
   height: 3px;
-  background: rgb(27, 154, 179);
+  background: rgb(135, 104, 3);
   transition: width 0.25s;
 }
 
@@ -1362,13 +1362,21 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .nav-links a {
+    position: relative;
+  }
+
+  .nav-links a::after {
+    left: 20%;
+    margin-left: 0;
+    transform: translateX(-50%);
+    margin-right: 500px;
+  }
+
   .hero-title {
     font-size: 2.2rem;
   }
 
-  .about-inner {
-    padding: 24px;
-  }
 
   .testimonial-card {
     flex: 0 0 260px;
@@ -1472,6 +1480,7 @@ p {
   .hamburger {
     display: flex;
   }
+
 
   .nav-links {
     position: fixed;
