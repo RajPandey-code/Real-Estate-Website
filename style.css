@@ -605,9 +605,10 @@ a {
 
 .testimonials-cards {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
-  overflow: visible;
+  overflow-x: scroll;
+  flex: 0 0 220px;
 }
 
 .testimonial-card {
@@ -629,9 +630,7 @@ a {
   font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.7;
-  margin-bottom: 24px;
-  width: 100%;
-  max-width: 372px;
+  width: 200px;
 }
 
 .slider {
@@ -866,7 +865,6 @@ a {
 .info-body strong {
   display: block;
   font-weight: 600;
-  color: var(--navy);
   margin-bottom: 2px;
 }
 
@@ -1257,6 +1255,7 @@ p {
 
   .testimonial-card {
     flex: 0 0 280px;
+    height: 250px;
   }
 
   .testimonial-text {
@@ -1264,9 +1263,12 @@ p {
     margin-bottom: 16px;
   }
 
+  /* .testimonial-author {
+    margin-bottom: 200px;
+  } */
+
   /* About */
   .about-inner {
-    grid-template-columns: 1fr;
     padding: 32px;
     text-align: center;
   }
@@ -1409,6 +1411,8 @@ p {
 
   .testimonial-card {
     flex: 0 0 260px;
+    height: 243px;
+
   }
 
   .nav-links a {
@@ -1446,6 +1450,8 @@ p {
   }
 
   .about-inner {
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 20px;
   }
 
