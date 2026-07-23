@@ -435,6 +435,19 @@ a {
   color: rgb(2, 83, 99);
 }
 
+/* ====================Whatsapp float===================== */
+.whatsapp-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.whatsapp-float {
+  color: var(--white);
+  justify-content: center;
+}
+
 /* ── Services ─────────────────────────────────────────────── */
 .services {
   padding: 100px 0;
@@ -1064,6 +1077,7 @@ p {
   }
 }
 
+
 /* ============================================================
    ── RESPONSIVE ──
    Breakpoints: 1024 / 900 / 768 / 640 / 540 / 480 / 425 / 375
@@ -1142,7 +1156,10 @@ p {
   }
 
   .nav-socials {
-    display: none;
+    display: flex;
+    margin-right: 100px;
+    margin-top: 10px;
+    gap: 60px;
   }
 
   .hamburger {
@@ -1180,6 +1197,7 @@ p {
   .nav-links a {
     color: black;
   }
+
 
   /* Hero */
   .hero-title {
@@ -1319,6 +1337,13 @@ p {
     align-items: center;
   }
 
+  .info-body strong {
+    display: block;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2px;
+  }
+
   .footer-socials {
     flex-direction: column;
     align-items: center;
@@ -1371,6 +1396,10 @@ p {
     margin-left: 0;
     transform: translateX(-50%);
     margin-right: 500px;
+  }
+
+  .nav-socials {
+    display: none;
   }
 
   .hero-title {
