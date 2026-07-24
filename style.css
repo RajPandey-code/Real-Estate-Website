@@ -252,8 +252,8 @@ a {
   position: absolute;
   bottom: -5px;
   width: 0px;
-  height: 3px;
-  background: rgb(135, 104, 3);
+  height: 2px;
+  background: rgb(56, 172, 226);
   transition: width 0.25s;
 }
 
