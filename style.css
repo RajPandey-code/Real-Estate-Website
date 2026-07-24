@@ -1076,12 +1076,7 @@ p {
 }
 
 
-/* ============================================================
-   ── RESPONSIVE ──
-   Breakpoints: 1024 / 900 / 768 / 640 / 540 / 480 / 425 / 375
-   Cascades from largest to smallest so later rules override
-   earlier ones at the same specificity.
-   ============================================================ */
+/* =======================RESPONSIVE================= */
 
 /* ===== Small desktops / large tablets (≤1024px) ===== */
 @media (max-width: 1024px) {
@@ -1192,6 +1187,8 @@ p {
     padding-top: 80px;
     gap: 40px;
     background-color: transparent;
+    overflow: hidden;
+    overscroll-behavior: none;
   }
 
   .nav-links a {
@@ -1537,10 +1534,11 @@ p {
     padding-right: 0;
     padding-top: 24px;
     gap: 28px;
+    overflow: hidden;
+    overscroll-behavior: none;
   }
 
   .call-btn {
-    display: flex;
     margin-bottom: 20px;
   }
 
