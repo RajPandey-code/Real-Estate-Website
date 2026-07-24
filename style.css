@@ -1199,7 +1199,7 @@ p {
   }
 
 
-  
+
   .hero-title {
     font-size: 40px;
     margin-left: 0;
@@ -1264,7 +1264,7 @@ p {
     margin-bottom: 16px;
   }
 
-  
+
   .about-inner {
     padding: 32px;
     text-align: center;
@@ -1524,45 +1524,20 @@ p {
 
   .nav-links {
     padding: 24px 16px;
-    /* was 24px 50px — too tight for 375px */
   }
 
   .nav-links a {
     display: flex;
     padding-right: 0;
-    /* was 100px — caused the overflow */
     backdrop-filter: blur(4px);
   }
 
   .nav-links.open {
     padding-left: 0;
-    /* re-assert the reset at this width too */
     padding-right: 0;
     padding-top: 24px;
     gap: 28px;
   }
-
-  /* .nav-links {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100vh;
-    background: var(--white);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    padding: 24px 50px;
-    box-shadow: var(--shadow-nav);
-    z-index: 99;
-  }
-
-  .nav-links a {
-    display: flex;
-    padding-right: 100px;
-    backdrop-filter: blur(4px);
-  } */
 
   .call-btn {
     display: flex;
@@ -1579,6 +1554,11 @@ p {
 
   .about-desc {
     font-size: 0.85rem;
+  }
+
+  .nav-links a:hover::after,
+  .nav-links a.active::after {
+    margin-left: 15px;
   }
 }
 
